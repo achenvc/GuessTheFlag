@@ -10,7 +10,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack (alignment: .leading, spacing: 20){ //add spacing and alignment in properties
+            Text("Hello, World!")
+        }
+        //VStack, HStack, ZStack
     }
 }
 
