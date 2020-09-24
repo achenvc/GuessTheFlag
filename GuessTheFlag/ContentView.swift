@@ -10,12 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            //Color.red.frame(width: 200, height: 200) //can take up whole space, or you can say width/height
-            Color.red.edgesIgnoringSafeArea(.all) //covers everything
-            Text("Your content")
-        }
-        .background(Color.red)
+//        LinearGradient(gradient: Gradient(colors:[.white, .black]), startPoint: .top, endPoint: .bottom)
+//        RadialGradient(gradient: Gradient(colors: [.blue, .black]), center: .center, startRadius: 20, endRadius: 200)
+        AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .red]), center: .center)
     }
 }
 
