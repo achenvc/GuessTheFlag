@@ -10,10 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack (alignment: .leading, spacing: 20){ //add spacing and alignment in properties
-            Text("Hello, World!")
+        ZStack {
+            //Color.red.frame(width: 200, height: 200) //can take up whole space, or you can say width/height
+            Color.red.edgesIgnoringSafeArea(.all) //covers everything
+            Text("Your content")
         }
-        //VStack, HStack, ZStack
+        .background(Color.red)
     }
 }
 
